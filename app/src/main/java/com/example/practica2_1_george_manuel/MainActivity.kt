@@ -2,7 +2,10 @@ package com.example.practica2_1_george_manuel
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -31,4 +34,18 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this, NewPlayer::class.java)
         startActivity(i)
     }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id = item.getItemID()
+        if(id==R.id.action_buscar){
+            Toast.makeText(this, "Busqueda",Toast.LENGTH_LONG).show();
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+        }
 }

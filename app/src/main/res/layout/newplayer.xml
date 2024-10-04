@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#D3D3D3"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#8AE3A8"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="90dp">
 
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="65dp"
         android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="104dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -21,8 +24,8 @@
         android:id="@+id/imageView3"
         android:layout_width="61dp"
         android:layout_height="60dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:srcCompat="@android:drawable/stat_sys_phone_call" />
@@ -31,8 +34,8 @@
         android:id="@+id/imageView4"
         android:layout_width="61dp"
         android:layout_height="64dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         tools:srcCompat="@android:drawable/ic_dialog_email" />
@@ -41,8 +44,8 @@
         android:id="@+id/imageView"
         android:layout_width="59dp"
         android:layout_height="64dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="138dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="140dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         tools:srcCompat="@android:drawable/ic_menu_camera" />
@@ -51,8 +54,8 @@
         android:id="@+id/imageView5"
         android:layout_width="147dp"
         android:layout_height="73dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="222dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="312dp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -61,14 +64,18 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="222dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="312dp"
+        android:backgroundTint="#E3ACDE"
         android:text="CHANGE"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="54dp"
         android:layout_height="729dp"
+        android:layout_marginStart="4dp"
         android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button">
@@ -76,14 +83,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="355dp"
+            tools:layout_editor_absoluteY="91dp" />
     </ScrollView>
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="41dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="75dp"
         android:layout_marginBottom="212dp"
         android:ems="10"
@@ -91,14 +100,15 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="Phone"
         android:inputType="phone"
@@ -109,8 +119,8 @@
         android:id="@+id/editTextText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
         android:ems="10"
         android:inputType="text"
         android:text="Name"
@@ -121,8 +131,8 @@
         android:id="@+id/editTextText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="text"
         android:text="Phonetic Name"
@@ -133,8 +143,8 @@
         android:id="@+id/editTextText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="text"
         android:text="Nickname"
@@ -144,9 +154,21 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="217dp"
         android:layout_height="47dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/editTextText">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="120dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

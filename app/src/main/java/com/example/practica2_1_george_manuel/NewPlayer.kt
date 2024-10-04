@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.practica2_1_george_manuel.ui.theme.Practica2_1_George_ManuelTheme
 
-class NewPlayer.kt : ComponentActivity() {
+/*class NewPlayer.kt : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -27,7 +27,7 @@ class NewPlayer.kt : ComponentActivity() {
             }
         }
     }
-}
+}*/
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
